@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fade-out {
+    animation: fadeOut  0.7s;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+  
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url(Resource/gedung2.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ========================== NAVBAR ============================= */
+#logo img{
+    width: 120px;
+}
+
+.iniNavbar {
+    background-color: #fff;
+    width: 90%;
+    margin: 20px auto 0px;
+    border-radius: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+.navbar {
+    border-radius: 50px;
+}
+
+@media (max-width: 993px) {
+    .iniNavbar{
+        background-color: #fff;
+        margin: 0px 0px;
+        border-radius: 0px;
+        width: 100%;
+    }
+    .navbar {
+        border-radius: 0px;
+    }
+    #nav3{
+        align-items:end;
+        margin-bottom: 20px;
+    }
+    #navKecil{
+        margin-bottom: 10px;
+    }
+}
+
+#nav a {
+    position: relative;
+	text-decoration: none;
+    color: #3F72AF;
+}
+
+#nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+	background: #1B1A55;  
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .5s;
+}
+
+#nav3 a:hover::after {
+    transform: scaleX(1);
+}
+
+#loginNav {
+    padding: 10px;
+    background-color: #1B1A55;
+    color: #F9F7F7;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 90px;
+    margin-left: 20px;
+}   
+
+/* ============================= SPACE ========================================*/
+#Space{
+    height: 200px;
+}
+
+#jam {
+    font-family: 'Gill Sans MT';
+    font-size: 24px;
+    color: #3F72AF;;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+}
+/* ==================================================Card*/
+.tengah{
+    display: grid;
+    place-items: center;
+}
+
+.gallery {
+    display: flex;
+    gap: 1rem;
+    max-width: 90rem;
+    margin-top: 40px;
+}
+
+.card {
+    position: relative;
+    width: 10rem;
+    border-radius: 1.2rem;
+    height: 20rem;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+    flex: 0.25;
+}
+
+.card img {
+    position: relative;
+    height: 35rem;
+    object-fit: cover;
+}
+
+.card:hover {
+    flex: 2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card figcaption {
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    transform: translateY(100%);
+    transition: transform 0.5s, opacity 0.5s; 
+}
+
+.card:hover figcaption {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+figcaption i {
+    text-decoration: none;
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background-clip: text;
+    transition: all .30s ease;
+    color: transparent; 
+    display: inline-block;
+    transition: all .30s ease;
+}
+
+figcaption a {
+    text-decoration: none;
+    background-image: linear-gradient(white, white);
+    background-clip: text;
+    transition: all .30s ease;
+    color: transparent; 
+    display: inline-block;
+    transition: all .30s ease;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==================================================Card*/
+.description{
+    width: 75%;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    margin-top: 40px;
+    border-radius: 20px;
+    color: white;
+}
+
+.fotbar img{
+    width: 100%;
+    margin: auto;
+    text-align: right;
+}
+
+/*============================= BAWAH ======================== */
+
+/* ==================================================Hitam */
+
+.bawahHitam{
+    font-family: "Montserrat", sans-serif;
+}
+.fullBawah {
+    justify-content: space-between;
+    background-color: #F9F7F7 ;
+    padding: 100px;
+    height: 100%;
+    width: 100%;
+}
+
+.bawahHitam .wave svg{
+    position: relative;
+    bottom: -20px;
+}
+/* ==================================================kiri */
+.sosmed{
+    display: flex;
+    gap: 1rem;
+}
+
+.sosmed img{
+    width: 50px;
+}
+.logo2 img{
+    width: 125px;
+}
+
+/* ==================================================tengah */
+.tengah1 p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tengah1 a{
+    text-decoration: none;
+    color: #3F72AF;
+    
+}
+/* ==================================================kanan */
+.right {
+    margin-top: 70px;
+    margin-right: 20px;
+}
+
+.right p {
+    font-size: 17px;
+}
+
+.right img {
+    width: 40px;
+    padding: 5px;
+}

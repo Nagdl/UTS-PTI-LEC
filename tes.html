@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Table Example</title>
+    <style>
+        /* CSS Styling */
+        .statusCss {
+            padding: 4px 10px;
+            line-height: 13px;
+            font-weight: 400;
+            border-radius: 1rem;
+            font-size: 11px;
+            letter-spacing: 0.4px;
+        }
+
+        .status_active {
+            background-color: #09922d;
+            color: #fff;
+        }
+
+        .status_inactive {
+            background-color: #8b9096;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="statusCss status_active">Active</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
